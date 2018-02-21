@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
 
-  root to: "album_search#show"
+  root to: "album_search#index"
 
-  #   resources :products do
-  #     resources :comments, :sales
-  #     resource :seller
-  #   end
+  resources :album_search
 
 end

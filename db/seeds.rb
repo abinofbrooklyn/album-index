@@ -23,7 +23,7 @@ end
 
 puts "50 albums created"
 
-500.times do |song|
+1000.times do |song|
   Song.create(
     title: "Song #{song}",
     artist_id: Artist.last.id,

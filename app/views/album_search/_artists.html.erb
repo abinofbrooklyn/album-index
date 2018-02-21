@@ -1,0 +1,21 @@
+<%= hidden_field_tag :direction, params[:direction] %>
+<%= hidden_field_tag :sort, params[:sort] %>
+<table class="pretty">
+  <tr>
+    <th><%= "artists" %></th>
+    <th><%= "albums" %></th>
+    <th><%= "songs" %></th>
+  </tr>
+  <% @artists.each do |artist| %>
+    <tr>
+      <td><%= artist.artist_name %></td>
+    </tr>
+    <tr>
+      <td><%= artist.album_title %></td>
+    </tr>
+    <tr>
+      <td><%= artist.song_title %></td>
+    </tr>
+  <% end %>
+</table>
+<%=  @artists %>
